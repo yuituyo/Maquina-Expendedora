@@ -118,13 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="queso_cabra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\queso_cabra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manchego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manchego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="queso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\queso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mozarrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mozarrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tocino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tocino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="albondiga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\albondiga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="costilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="albondiga1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\albondiga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ejemplo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ejemplo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="queso_cabra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\queso_cabra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="albondiga-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\albondiga-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peperoni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peperoni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pimiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cebolla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cebolla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oregano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oregano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="albahaca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\albahaca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -29,71 +29,61 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            this.label1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Label_precio = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.roundedPanel4 = new RoundedPanel();
-            this.roundedButton3 = new RoundedButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel1 = new RoundedPanel();
-            this.roundedButton1 = new RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel2 = new RoundedPanel();
-            this.roundedButton2 = new RoundedButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel3 = new RoundedPanel();
-            this.roundedButton4 = new RoundedButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel5 = new RoundedPanel();
-            this.roundedButton5 = new RoundedButton();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel6 = new RoundedPanel();
-            this.roundedButton6 = new RoundedButton();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel7 = new RoundedPanel();
-            this.roundedButton7 = new RoundedButton();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.roundedPanel8 = new RoundedPanel();
-            this.roundedButton8 = new RoundedButton();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.roundedPanel15 = new RoundedPanel();
+            this.PanelIngredientes = new RoundedPanel();
+            this.ingredientes_totales = new System.Windows.Forms.Label();
+            this.Estado = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.roundedPanel13 = new RoundedPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel9 = new RoundedPanel();
-            this.roundedButton9 = new RoundedButton();
+            this.Elegir_albahaca = new RoundedButton();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.roundedPanel10 = new RoundedPanel();
-            this.roundedButton10 = new RoundedButton();
+            this.Elegir_cebolla = new RoundedButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.roundedPanel11 = new RoundedPanel();
-            this.roundedButton11 = new RoundedButton();
+            this.Elegir_oregano = new RoundedButton();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.roundedPanel12 = new RoundedPanel();
-            this.roundedButton12 = new RoundedButton();
+            this.Elegir_pimiento = new RoundedButton();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.roundedPanel13 = new RoundedPanel();
+            this.roundedPanel5 = new RoundedPanel();
+            this.Elegir_peperoni = new RoundedButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel6 = new RoundedPanel();
+            this.Elegir_albondiga = new RoundedButton();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel7 = new RoundedPanel();
+            this.Elegir_tocino = new RoundedButton();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel8 = new RoundedPanel();
+            this.Elegir_costilla = new RoundedButton();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel3 = new RoundedPanel();
+            this.Elegir_Chedar = new RoundedButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel2 = new RoundedPanel();
+            this.Elegir_cabra = new RoundedButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel1 = new RoundedPanel();
+            this.Elegir_mozzarella = new RoundedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.roundedPanel4 = new RoundedPanel();
+            this.Elegir_manchego = new RoundedButton();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.Cancelar = new RoundedButton();
+            this.Regresar = new RoundedButton();
+            this.Confirmar = new RoundedButton();
             this.panel15.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.roundedPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.roundedPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.roundedPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.roundedPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.roundedPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.roundedPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.PanelIngredientes.SuspendLayout();
+            this.roundedPanel13.SuspendLayout();
             this.roundedPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.roundedPanel10.SuspendLayout();
@@ -102,81 +92,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.roundedPanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.roundedPanel13.SuspendLayout();
+            this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.roundedPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.roundedPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.roundedPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.roundedPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.roundedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.roundedPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(131, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dinero";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
+            this.panel15.Controls.Add(this.Label_precio);
+            this.panel15.Controls.Add(this.Cancelar);
+            this.panel15.Controls.Add(this.Regresar);
+            this.panel15.Controls.Add(this.Confirmar);
             this.panel15.Controls.Add(this.label3);
-            this.panel15.Controls.Add(this.label2);
             this.panel15.Location = new System.Drawing.Point(569, 24);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(354, 165);
             this.panel15.TabIndex = 14;
             // 
-            // label2
+            // Label_precio
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Producto";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Label_precio.AutoSize = true;
+            this.Label_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_precio.Location = new System.Drawing.Point(51, 67);
+            this.Label_precio.Name = "Label_precio";
+            this.Label_precio.Size = new System.Drawing.Size(39, 29);
+            this.Label_precio.TabIndex = 5;
+            this.Label_precio.Text = "$$";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(203, 16);
+            this.label3.Location = new System.Drawing.Point(37, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Precio";
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
-            this.panel16.Controls.Add(this.label5);
-            this.panel16.Controls.Add(this.label4);
-            this.panel16.Location = new System.Drawing.Point(569, 199);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(354, 368);
-            this.panel16.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(93, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 29);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Ingredientes";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 29);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Ingredientes";
             // 
             // label6
             // 
@@ -188,411 +153,15 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Quesos";
             // 
-            // roundedPanel4
-            // 
-            this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel4.Controls.Add(this.roundedButton3);
-            this.roundedPanel4.Controls.Add(this.pictureBox4);
-            this.roundedPanel4.CornerRadius = 20;
-            this.roundedPanel4.Location = new System.Drawing.Point(430, 40);
-            this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel4.TabIndex = 42;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton3.TabIndex = 40;
-            this.roundedButton3.Text = "Cheddar";
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox4.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel1.Controls.Add(this.roundedButton1);
-            this.roundedPanel1.Controls.Add(this.pictureBox1);
-            this.roundedPanel1.CornerRadius = 20;
-            this.roundedPanel1.Location = new System.Drawing.Point(291, 40);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel1.TabIndex = 43;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton1.TabIndex = 40;
-            this.roundedButton1.Text = "Cheddar";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel2.Controls.Add(this.roundedButton2);
-            this.roundedPanel2.Controls.Add(this.pictureBox2);
-            this.roundedPanel2.CornerRadius = 20;
-            this.roundedPanel2.Location = new System.Drawing.Point(152, 40);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel2.TabIndex = 44;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton2.TabIndex = 40;
-            this.roundedButton2.Text = "Cheddar";
-            this.roundedButton2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // roundedPanel3
-            // 
-            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel3.Controls.Add(this.roundedButton4);
-            this.roundedPanel3.Controls.Add(this.pictureBox3);
-            this.roundedPanel3.CornerRadius = 20;
-            this.roundedPanel3.Location = new System.Drawing.Point(12, 40);
-            this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel3.TabIndex = 45;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton4.TabIndex = 40;
-            this.roundedButton4.Text = "Cheddar";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // roundedPanel5
-            // 
-            this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel5.Controls.Add(this.roundedButton5);
-            this.roundedPanel5.Controls.Add(this.pictureBox5);
-            this.roundedPanel5.CornerRadius = 20;
-            this.roundedPanel5.Location = new System.Drawing.Point(12, 238);
-            this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel5.TabIndex = 50;
-            // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton5.FlatAppearance.BorderSize = 0;
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton5.TabIndex = 40;
-            this.roundedButton5.Text = "Cheddar";
-            this.roundedButton5.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // roundedPanel6
-            // 
-            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel6.Controls.Add(this.roundedButton6);
-            this.roundedPanel6.Controls.Add(this.pictureBox6);
-            this.roundedPanel6.CornerRadius = 20;
-            this.roundedPanel6.Location = new System.Drawing.Point(152, 238);
-            this.roundedPanel6.Name = "roundedPanel6";
-            this.roundedPanel6.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel6.TabIndex = 49;
-            // 
-            // roundedButton6
-            // 
-            this.roundedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton6.FlatAppearance.BorderSize = 0;
-            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton6.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton6.TabIndex = 40;
-            this.roundedButton6.Text = "Cheddar";
-            this.roundedButton6.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox6.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // roundedPanel7
-            // 
-            this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel7.Controls.Add(this.roundedButton7);
-            this.roundedPanel7.Controls.Add(this.pictureBox7);
-            this.roundedPanel7.CornerRadius = 20;
-            this.roundedPanel7.Location = new System.Drawing.Point(291, 238);
-            this.roundedPanel7.Name = "roundedPanel7";
-            this.roundedPanel7.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel7.TabIndex = 48;
-            // 
-            // roundedButton7
-            // 
-            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton7.FlatAppearance.BorderSize = 0;
-            this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton7.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton7.TabIndex = 40;
-            this.roundedButton7.Text = "Cheddar";
-            this.roundedButton7.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox7.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
-            // roundedPanel8
-            // 
-            this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel8.Controls.Add(this.roundedButton8);
-            this.roundedPanel8.Controls.Add(this.pictureBox8);
-            this.roundedPanel8.CornerRadius = 20;
-            this.roundedPanel8.Location = new System.Drawing.Point(430, 238);
-            this.roundedPanel8.Name = "roundedPanel8";
-            this.roundedPanel8.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel8.TabIndex = 47;
-            // 
-            // roundedButton8
-            // 
-            this.roundedButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton8.FlatAppearance.BorderSize = 0;
-            this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton8.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton8.Name = "roundedButton8";
-            this.roundedButton8.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton8.TabIndex = 40;
-            this.roundedButton8.Text = "Cheddar";
-            this.roundedButton8.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox8.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(236, 206);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 29);
+            this.label7.Size = new System.Drawing.Size(115, 29);
             this.label7.TabIndex = 46;
-            this.label7.Text = "Quesos";
-            // 
-            // roundedPanel9
-            // 
-            this.roundedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel9.Controls.Add(this.roundedButton9);
-            this.roundedPanel9.Controls.Add(this.pictureBox9);
-            this.roundedPanel9.CornerRadius = 20;
-            this.roundedPanel9.Location = new System.Drawing.Point(12, 436);
-            this.roundedPanel9.Name = "roundedPanel9";
-            this.roundedPanel9.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel9.TabIndex = 55;
-            // 
-            // roundedButton9
-            // 
-            this.roundedButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton9.FlatAppearance.BorderSize = 0;
-            this.roundedButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton9.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton9.Name = "roundedButton9";
-            this.roundedButton9.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton9.TabIndex = 40;
-            this.roundedButton9.Text = "Cheddar";
-            this.roundedButton9.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox9.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
-            // 
-            // roundedPanel10
-            // 
-            this.roundedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel10.Controls.Add(this.roundedButton10);
-            this.roundedPanel10.Controls.Add(this.pictureBox10);
-            this.roundedPanel10.CornerRadius = 20;
-            this.roundedPanel10.Location = new System.Drawing.Point(152, 436);
-            this.roundedPanel10.Name = "roundedPanel10";
-            this.roundedPanel10.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel10.TabIndex = 54;
-            // 
-            // roundedButton10
-            // 
-            this.roundedButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton10.FlatAppearance.BorderSize = 0;
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton10.TabIndex = 40;
-            this.roundedButton10.Text = "Cheddar";
-            this.roundedButton10.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox10.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
-            // 
-            // roundedPanel11
-            // 
-            this.roundedPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel11.Controls.Add(this.roundedButton11);
-            this.roundedPanel11.Controls.Add(this.pictureBox11);
-            this.roundedPanel11.CornerRadius = 20;
-            this.roundedPanel11.Location = new System.Drawing.Point(291, 436);
-            this.roundedPanel11.Name = "roundedPanel11";
-            this.roundedPanel11.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel11.TabIndex = 53;
-            // 
-            // roundedButton11
-            // 
-            this.roundedButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton11.FlatAppearance.BorderSize = 0;
-            this.roundedButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton11.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton11.Name = "roundedButton11";
-            this.roundedButton11.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton11.TabIndex = 40;
-            this.roundedButton11.Text = "Cheddar";
-            this.roundedButton11.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox11.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
-            // 
-            // roundedPanel12
-            // 
-            this.roundedPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
-            this.roundedPanel12.Controls.Add(this.roundedButton12);
-            this.roundedPanel12.Controls.Add(this.pictureBox12);
-            this.roundedPanel12.CornerRadius = 20;
-            this.roundedPanel12.Location = new System.Drawing.Point(430, 436);
-            this.roundedPanel12.Name = "roundedPanel12";
-            this.roundedPanel12.Size = new System.Drawing.Size(133, 159);
-            this.roundedPanel12.TabIndex = 52;
-            // 
-            // roundedButton12
-            // 
-            this.roundedButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
-            this.roundedButton12.FlatAppearance.BorderSize = 0;
-            this.roundedButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton12.Location = new System.Drawing.Point(37, 123);
-            this.roundedButton12.Name = "roundedButton12";
-            this.roundedButton12.Size = new System.Drawing.Size(60, 33);
-            this.roundedButton12.TabIndex = 40;
-            this.roundedButton12.Text = "Cheddar";
-            this.roundedButton12.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::Maquina_Expendedora.Properties.Resources.queso;
-            this.pictureBox12.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 1;
-            this.pictureBox12.TabStop = false;
+            this.label7.Text = "Proteinas";
             // 
             // label8
             // 
@@ -600,9 +169,60 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(236, 404);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 29);
+            this.label8.Size = new System.Drawing.Size(110, 29);
             this.label8.TabIndex = 51;
-            this.label8.Text = "Quesos";
+            this.label8.Text = "Verduras";
+            // 
+            // roundedPanel15
+            // 
+            this.roundedPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
+            this.roundedPanel15.CornerRadius = 20;
+            this.roundedPanel15.Location = new System.Drawing.Point(12, 601);
+            this.roundedPanel15.Name = "roundedPanel15";
+            this.roundedPanel15.Size = new System.Drawing.Size(551, 178);
+            this.roundedPanel15.TabIndex = 57;
+            // 
+            // PanelIngredientes
+            // 
+            this.PanelIngredientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
+            this.PanelIngredientes.Controls.Add(this.ingredientes_totales);
+            this.PanelIngredientes.Controls.Add(this.Estado);
+            this.PanelIngredientes.Controls.Add(this.label5);
+            this.PanelIngredientes.CornerRadius = 20;
+            this.PanelIngredientes.Location = new System.Drawing.Point(570, 206);
+            this.PanelIngredientes.Name = "PanelIngredientes";
+            this.PanelIngredientes.Size = new System.Drawing.Size(353, 375);
+            this.PanelIngredientes.TabIndex = 57;
+            // 
+            // ingredientes_totales
+            // 
+            this.ingredientes_totales.AutoSize = true;
+            this.ingredientes_totales.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ingredientes_totales.Location = new System.Drawing.Point(236, 65);
+            this.ingredientes_totales.Name = "ingredientes_totales";
+            this.ingredientes_totales.Size = new System.Drawing.Size(59, 29);
+            this.ingredientes_totales.TabIndex = 4;
+            this.ingredientes_totales.Text = "0/13";
+            // 
+            // Estado
+            // 
+            this.Estado.AutoSize = true;
+            this.Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Estado.Location = new System.Drawing.Point(50, 22);
+            this.Estado.Name = "Estado";
+            this.Estado.Size = new System.Drawing.Size(88, 29);
+            this.Estado.TabIndex = 2;
+            this.Estado.Text = "Estado";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(50, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 29);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Ingredientes";
             // 
             // roundedPanel13
             // 
@@ -614,12 +234,484 @@
             this.roundedPanel13.Size = new System.Drawing.Size(353, 192);
             this.roundedPanel13.TabIndex = 56;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(131, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Dinero";
+            // 
+            // roundedPanel9
+            // 
+            this.roundedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel9.Controls.Add(this.Elegir_albahaca);
+            this.roundedPanel9.Controls.Add(this.pictureBox9);
+            this.roundedPanel9.CornerRadius = 20;
+            this.roundedPanel9.Location = new System.Drawing.Point(12, 436);
+            this.roundedPanel9.Name = "roundedPanel9";
+            this.roundedPanel9.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel9.TabIndex = 55;
+            // 
+            // Elegir_albahaca
+            // 
+            this.Elegir_albahaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_albahaca.FlatAppearance.BorderSize = 0;
+            this.Elegir_albahaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_albahaca.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_albahaca.Name = "Elegir_albahaca";
+            this.Elegir_albahaca.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_albahaca.TabIndex = 40;
+            this.Elegir_albahaca.Tag = "Albahaca";
+            this.Elegir_albahaca.Text = "Albahaca";
+            this.Elegir_albahaca.UseVisualStyleBackColor = false;
+            this.Elegir_albahaca.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Maquina_Expendedora.Properties.Resources.albahaca;
+            this.pictureBox9.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
+            // roundedPanel10
+            // 
+            this.roundedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel10.Controls.Add(this.Elegir_cebolla);
+            this.roundedPanel10.Controls.Add(this.pictureBox10);
+            this.roundedPanel10.CornerRadius = 20;
+            this.roundedPanel10.Location = new System.Drawing.Point(152, 436);
+            this.roundedPanel10.Name = "roundedPanel10";
+            this.roundedPanel10.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel10.TabIndex = 54;
+            // 
+            // Elegir_cebolla
+            // 
+            this.Elegir_cebolla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_cebolla.FlatAppearance.BorderSize = 0;
+            this.Elegir_cebolla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_cebolla.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_cebolla.Name = "Elegir_cebolla";
+            this.Elegir_cebolla.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_cebolla.TabIndex = 40;
+            this.Elegir_cebolla.Tag = "Cebolla";
+            this.Elegir_cebolla.Text = "Cebolla";
+            this.Elegir_cebolla.UseVisualStyleBackColor = false;
+            this.Elegir_cebolla.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Maquina_Expendedora.Properties.Resources.cebolla;
+            this.pictureBox10.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
+            // roundedPanel11
+            // 
+            this.roundedPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel11.Controls.Add(this.Elegir_oregano);
+            this.roundedPanel11.Controls.Add(this.pictureBox11);
+            this.roundedPanel11.CornerRadius = 20;
+            this.roundedPanel11.Location = new System.Drawing.Point(291, 436);
+            this.roundedPanel11.Name = "roundedPanel11";
+            this.roundedPanel11.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel11.TabIndex = 53;
+            // 
+            // Elegir_oregano
+            // 
+            this.Elegir_oregano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_oregano.FlatAppearance.BorderSize = 0;
+            this.Elegir_oregano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_oregano.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_oregano.Name = "Elegir_oregano";
+            this.Elegir_oregano.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_oregano.TabIndex = 40;
+            this.Elegir_oregano.Tag = "Oregano";
+            this.Elegir_oregano.Text = "Oregano";
+            this.Elegir_oregano.UseVisualStyleBackColor = false;
+            this.Elegir_oregano.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Maquina_Expendedora.Properties.Resources.oregano;
+            this.pictureBox11.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
+            // 
+            // roundedPanel12
+            // 
+            this.roundedPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel12.Controls.Add(this.Elegir_pimiento);
+            this.roundedPanel12.Controls.Add(this.pictureBox12);
+            this.roundedPanel12.CornerRadius = 20;
+            this.roundedPanel12.Location = new System.Drawing.Point(430, 436);
+            this.roundedPanel12.Name = "roundedPanel12";
+            this.roundedPanel12.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel12.TabIndex = 52;
+            // 
+            // Elegir_pimiento
+            // 
+            this.Elegir_pimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_pimiento.FlatAppearance.BorderSize = 0;
+            this.Elegir_pimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_pimiento.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_pimiento.Name = "Elegir_pimiento";
+            this.Elegir_pimiento.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_pimiento.TabIndex = 40;
+            this.Elegir_pimiento.Tag = "Pimiento";
+            this.Elegir_pimiento.Text = "Pimiento";
+            this.Elegir_pimiento.UseVisualStyleBackColor = false;
+            this.Elegir_pimiento.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Maquina_Expendedora.Properties.Resources.pimiento;
+            this.pictureBox12.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 1;
+            this.pictureBox12.TabStop = false;
+            // 
+            // roundedPanel5
+            // 
+            this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel5.Controls.Add(this.Elegir_peperoni);
+            this.roundedPanel5.Controls.Add(this.pictureBox5);
+            this.roundedPanel5.CornerRadius = 20;
+            this.roundedPanel5.Location = new System.Drawing.Point(12, 238);
+            this.roundedPanel5.Name = "roundedPanel5";
+            this.roundedPanel5.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel5.TabIndex = 50;
+            // 
+            // Elegir_peperoni
+            // 
+            this.Elegir_peperoni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_peperoni.FlatAppearance.BorderSize = 0;
+            this.Elegir_peperoni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_peperoni.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_peperoni.Name = "Elegir_peperoni";
+            this.Elegir_peperoni.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_peperoni.TabIndex = 40;
+            this.Elegir_peperoni.Tag = "Peperoni";
+            this.Elegir_peperoni.Text = "Peperoni";
+            this.Elegir_peperoni.UseVisualStyleBackColor = false;
+            this.Elegir_peperoni.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Maquina_Expendedora.Properties.Resources.peperoni;
+            this.pictureBox5.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // roundedPanel6
+            // 
+            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel6.Controls.Add(this.Elegir_albondiga);
+            this.roundedPanel6.Controls.Add(this.pictureBox6);
+            this.roundedPanel6.CornerRadius = 20;
+            this.roundedPanel6.Location = new System.Drawing.Point(152, 238);
+            this.roundedPanel6.Name = "roundedPanel6";
+            this.roundedPanel6.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel6.TabIndex = 49;
+            // 
+            // Elegir_albondiga
+            // 
+            this.Elegir_albondiga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_albondiga.FlatAppearance.BorderSize = 0;
+            this.Elegir_albondiga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_albondiga.Location = new System.Drawing.Point(32, 123);
+            this.Elegir_albondiga.Name = "Elegir_albondiga";
+            this.Elegir_albondiga.Size = new System.Drawing.Size(69, 33);
+            this.Elegir_albondiga.TabIndex = 40;
+            this.Elegir_albondiga.Tag = "Albondiga";
+            this.Elegir_albondiga.Text = "Albondiga";
+            this.Elegir_albondiga.UseVisualStyleBackColor = false;
+            this.Elegir_albondiga.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Maquina_Expendedora.Properties.Resources.albondiga_removebg_preview;
+            this.pictureBox6.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // roundedPanel7
+            // 
+            this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel7.Controls.Add(this.Elegir_tocino);
+            this.roundedPanel7.Controls.Add(this.pictureBox7);
+            this.roundedPanel7.CornerRadius = 20;
+            this.roundedPanel7.Location = new System.Drawing.Point(291, 238);
+            this.roundedPanel7.Name = "roundedPanel7";
+            this.roundedPanel7.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel7.TabIndex = 48;
+            // 
+            // Elegir_tocino
+            // 
+            this.Elegir_tocino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_tocino.FlatAppearance.BorderSize = 0;
+            this.Elegir_tocino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_tocino.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_tocino.Name = "Elegir_tocino";
+            this.Elegir_tocino.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_tocino.TabIndex = 40;
+            this.Elegir_tocino.Tag = "Tocino";
+            this.Elegir_tocino.Text = "Tocino";
+            this.Elegir_tocino.UseVisualStyleBackColor = false;
+            this.Elegir_tocino.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Maquina_Expendedora.Properties.Resources.tocino;
+            this.pictureBox7.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
+            // roundedPanel8
+            // 
+            this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel8.Controls.Add(this.Elegir_costilla);
+            this.roundedPanel8.Controls.Add(this.pictureBox8);
+            this.roundedPanel8.CornerRadius = 20;
+            this.roundedPanel8.Location = new System.Drawing.Point(430, 238);
+            this.roundedPanel8.Name = "roundedPanel8";
+            this.roundedPanel8.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel8.TabIndex = 47;
+            // 
+            // Elegir_costilla
+            // 
+            this.Elegir_costilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_costilla.FlatAppearance.BorderSize = 0;
+            this.Elegir_costilla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_costilla.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_costilla.Name = "Elegir_costilla";
+            this.Elegir_costilla.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_costilla.TabIndex = 40;
+            this.Elegir_costilla.Tag = "Costilla";
+            this.Elegir_costilla.Text = "Costilla";
+            this.Elegir_costilla.UseVisualStyleBackColor = false;
+            this.Elegir_costilla.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Maquina_Expendedora.Properties.Resources.costilla;
+            this.pictureBox8.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel3.Controls.Add(this.Elegir_Chedar);
+            this.roundedPanel3.Controls.Add(this.pictureBox3);
+            this.roundedPanel3.CornerRadius = 20;
+            this.roundedPanel3.Location = new System.Drawing.Point(12, 40);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel3.TabIndex = 45;
+            // 
+            // Elegir_Chedar
+            // 
+            this.Elegir_Chedar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_Chedar.FlatAppearance.BorderSize = 0;
+            this.Elegir_Chedar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_Chedar.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_Chedar.Name = "Elegir_Chedar";
+            this.Elegir_Chedar.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_Chedar.TabIndex = 40;
+            this.Elegir_Chedar.Tag = "Cheddar";
+            this.Elegir_Chedar.Text = "Cheddar";
+            this.Elegir_Chedar.UseVisualStyleBackColor = false;
+            this.Elegir_Chedar.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Enabled = false;
+            this.pictureBox3.Image = global::Maquina_Expendedora.Properties.Resources.queso;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel2.Controls.Add(this.Elegir_cabra);
+            this.roundedPanel2.Controls.Add(this.pictureBox2);
+            this.roundedPanel2.CornerRadius = 20;
+            this.roundedPanel2.Location = new System.Drawing.Point(152, 40);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel2.TabIndex = 44;
+            // 
+            // Elegir_cabra
+            // 
+            this.Elegir_cabra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_cabra.FlatAppearance.BorderSize = 0;
+            this.Elegir_cabra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_cabra.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_cabra.Name = "Elegir_cabra";
+            this.Elegir_cabra.Size = new System.Drawing.Size(60, 33);
+            this.Elegir_cabra.TabIndex = 40;
+            this.Elegir_cabra.Tag = "Cabra";
+            this.Elegir_cabra.Text = "Cabra";
+            this.Elegir_cabra.UseVisualStyleBackColor = false;
+            this.Elegir_cabra.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Maquina_Expendedora.Properties.Resources.queso_cabra;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel1.Controls.Add(this.Elegir_mozzarella);
+            this.roundedPanel1.Controls.Add(this.pictureBox1);
+            this.roundedPanel1.CornerRadius = 20;
+            this.roundedPanel1.Location = new System.Drawing.Point(291, 40);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel1.TabIndex = 43;
+            // 
+            // Elegir_mozzarella
+            // 
+            this.Elegir_mozzarella.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_mozzarella.FlatAppearance.BorderSize = 0;
+            this.Elegir_mozzarella.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_mozzarella.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_mozzarella.Name = "Elegir_mozzarella";
+            this.Elegir_mozzarella.Size = new System.Drawing.Size(70, 33);
+            this.Elegir_mozzarella.TabIndex = 40;
+            this.Elegir_mozzarella.Tag = "Mozzarela";
+            this.Elegir_mozzarella.Text = "Mozzarela";
+            this.Elegir_mozzarella.UseVisualStyleBackColor = false;
+            this.Elegir_mozzarella.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Maquina_Expendedora.Properties.Resources.Mozarrella;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // roundedPanel4
+            // 
+            this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(149)))), ((int)(((byte)(142)))));
+            this.roundedPanel4.Controls.Add(this.Elegir_manchego);
+            this.roundedPanel4.Controls.Add(this.pictureBox4);
+            this.roundedPanel4.CornerRadius = 20;
+            this.roundedPanel4.Location = new System.Drawing.Point(430, 40);
+            this.roundedPanel4.Name = "roundedPanel4";
+            this.roundedPanel4.Size = new System.Drawing.Size(133, 159);
+            this.roundedPanel4.TabIndex = 42;
+            // 
+            // Elegir_manchego
+            // 
+            this.Elegir_manchego.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(39)))), ((int)(((byte)(90)))));
+            this.Elegir_manchego.FlatAppearance.BorderSize = 0;
+            this.Elegir_manchego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Elegir_manchego.Location = new System.Drawing.Point(37, 123);
+            this.Elegir_manchego.Name = "Elegir_manchego";
+            this.Elegir_manchego.Size = new System.Drawing.Size(67, 33);
+            this.Elegir_manchego.TabIndex = 40;
+            this.Elegir_manchego.Tag = "Manchego";
+            this.Elegir_manchego.Text = "Manchego";
+            this.Elegir_manchego.UseVisualStyleBackColor = false;
+            this.Elegir_manchego.Click += new System.EventHandler(this.ElegirIngrediente_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Maquina_Expendedora.Properties.Resources.manchego;
+            this.pictureBox4.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(117, 115);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // Cancelar
+            // 
+            this.Cancelar.BackColor = System.Drawing.Color.Red;
+            this.Cancelar.FlatAppearance.BorderSize = 0;
+            this.Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancelar.Location = new System.Drawing.Point(242, 91);
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.Size = new System.Drawing.Size(95, 60);
+            this.Cancelar.TabIndex = 43;
+            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.UseVisualStyleBackColor = false;
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            // 
+            // Regresar
+            // 
+            this.Regresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(196)))), ((int)(((byte)(248)))));
+            this.Regresar.FlatAppearance.BorderSize = 0;
+            this.Regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Regresar.Location = new System.Drawing.Point(136, 55);
+            this.Regresar.Name = "Regresar";
+            this.Regresar.Size = new System.Drawing.Size(95, 60);
+            this.Regresar.TabIndex = 42;
+            this.Regresar.Text = "Regresar";
+            this.Regresar.UseVisualStyleBackColor = false;
+            this.Regresar.Click += new System.EventHandler(this.Regresar_Click);
+            // 
+            // Confirmar
+            // 
+            this.Confirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Confirmar.FlatAppearance.BorderSize = 0;
+            this.Confirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Confirmar.Location = new System.Drawing.Point(242, 16);
+            this.Confirmar.Name = "Confirmar";
+            this.Confirmar.Size = new System.Drawing.Size(95, 60);
+            this.Confirmar.TabIndex = 41;
+            this.Confirmar.Text = "Confirmar";
+            this.Confirmar.UseVisualStyleBackColor = false;
+            this.Confirmar.Click += new System.EventHandler(this.Confirmar_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(934, 791);
+            this.Controls.Add(this.roundedPanel15);
+            this.Controls.Add(this.PanelIngredientes);
             this.Controls.Add(this.roundedPanel13);
             this.Controls.Add(this.roundedPanel9);
             this.Controls.Add(this.roundedPanel10);
@@ -636,7 +728,6 @@
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedPanel4);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel15);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -645,24 +736,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.roundedPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.roundedPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.roundedPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.roundedPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.roundedPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.roundedPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.roundedPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.roundedPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.PanelIngredientes.ResumeLayout(false);
+            this.PanelIngredientes.PerformLayout();
+            this.roundedPanel13.ResumeLayout(false);
+            this.roundedPanel13.PerformLayout();
             this.roundedPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.roundedPanel10.ResumeLayout(false);
@@ -671,8 +748,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.roundedPanel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.roundedPanel13.ResumeLayout(false);
-            this.roundedPanel13.PerformLayout();
+            this.roundedPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.roundedPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.roundedPanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.roundedPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.roundedPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.roundedPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.roundedPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.roundedPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -681,51 +772,56 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Estado;
         private System.Windows.Forms.Label label6;
         private RoundedPanel roundedPanel4;
-        private RoundedButton roundedButton3;
+        private RoundedButton Elegir_manchego;
         private System.Windows.Forms.PictureBox pictureBox4;
         private RoundedPanel roundedPanel1;
-        private RoundedButton roundedButton1;
+        private RoundedButton Elegir_mozzarella;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RoundedPanel roundedPanel2;
-        private RoundedButton roundedButton2;
+        private RoundedButton Elegir_cabra;
         private System.Windows.Forms.PictureBox pictureBox2;
         private RoundedPanel roundedPanel3;
-        private RoundedButton roundedButton4;
+        private RoundedButton Elegir_Chedar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private RoundedPanel roundedPanel5;
-        private RoundedButton roundedButton5;
+        private RoundedButton Elegir_peperoni;
         private System.Windows.Forms.PictureBox pictureBox5;
         private RoundedPanel roundedPanel6;
-        private RoundedButton roundedButton6;
+        private RoundedButton Elegir_albondiga;
         private System.Windows.Forms.PictureBox pictureBox6;
         private RoundedPanel roundedPanel7;
-        private RoundedButton roundedButton7;
+        private RoundedButton Elegir_tocino;
         private System.Windows.Forms.PictureBox pictureBox7;
         private RoundedPanel roundedPanel8;
-        private RoundedButton roundedButton8;
+        private RoundedButton Elegir_costilla;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label7;
         private RoundedPanel roundedPanel9;
-        private RoundedButton roundedButton9;
+        private RoundedButton Elegir_albahaca;
         private System.Windows.Forms.PictureBox pictureBox9;
         private RoundedPanel roundedPanel10;
-        private RoundedButton roundedButton10;
+        private RoundedButton Elegir_cebolla;
         private System.Windows.Forms.PictureBox pictureBox10;
         private RoundedPanel roundedPanel11;
-        private RoundedButton roundedButton11;
+        private RoundedButton Elegir_oregano;
         private System.Windows.Forms.PictureBox pictureBox11;
         private RoundedPanel roundedPanel12;
-        private RoundedButton roundedButton12;
+        private RoundedButton Elegir_pimiento;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label8;
         private RoundedPanel roundedPanel13;
+        private RoundedPanel PanelIngredientes;
+        private RoundedButton Confirmar;
+        private RoundedButton Cancelar;
+        private RoundedButton Regresar;
+        private RoundedPanel roundedPanel15;
+        private System.Windows.Forms.Label Label_precio;
+        private System.Windows.Forms.Label ingredientes_totales;
     }
 }
 
