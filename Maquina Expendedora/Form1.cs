@@ -197,6 +197,7 @@ namespace Maquina_Expendedora
 
                     item.Value.Inventario -= item.Value.Temporal;
                     item.Value.Temporal = 0;
+
                 }
 
             }
@@ -319,6 +320,7 @@ namespace Maquina_Expendedora
             precio_total = 0;
             Label_precio.Text = "0";
 
+            Confirmar.Text = "Confirmar";
             ingredientes_seleccionados = 0;
             ingredientes_totales.Text = "0/" + total_ingredientes;
             manejador = new ContextoPizza(this);
@@ -335,7 +337,7 @@ namespace Maquina_Expendedora
                 {
 
                     this.PanelIngredientes.Controls.Add(label);
-
+                    altura_label += 22;
                 }
 
             }
@@ -410,7 +412,8 @@ namespace Maquina_Expendedora
 
                 //Regresar lista de ingredientes
                 contexto.Form.altura_label = 110;
-                contexto.Form.ingredientes_totales.Text = +contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
+                contexto.Form.ingredientes_totales.Text = contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
+                contexto.Form.ingredientes_seleccionados = contexto.Form.historial.Peek().Count();
                 contexto.Form.Limpiar_lista();
                 contexto.Form.lista_ingredientes = contexto.Form.historial.Pop();
                 contexto.Form.RestaurarLista(contexto.Form.lista_ingredientes);
@@ -419,6 +422,7 @@ namespace Maquina_Expendedora
                 contexto.Form.Desactivar_proteinas();
                 contexto.Form.Activar_quesos();
                 contexto.Form.Estado.Text = "Elige los quesos...";
+                contexto.Form.Confirmar.Text = "Confirmar";
                 contexto.EstadoActual = new EstadoQuesos();
             }
             public void Cancelar(ContextoPizza contexto)
@@ -438,6 +442,8 @@ namespace Maquina_Expendedora
                 contexto.Form.Desactivar_vegetales();
                 contexto.Form.Estado.Text = "Esperando pago...";
                 contexto.Form.Confirmar.Text = "Pagar";
+                contexto.EstadoActual = new EstadoPago();
+
             }
             public void Regreso(ContextoPizza contexto)
             {
@@ -454,6 +460,7 @@ namespace Maquina_Expendedora
                 //Regresar lista de ingredientes
                 contexto.Form.altura_label = 110;
                 contexto.Form.ingredientes_totales.Text = +contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
+                contexto.Form.ingredientes_seleccionados = contexto.Form.historial.Peek().Count();
                 contexto.Form.Limpiar_lista();
                 contexto.Form.lista_ingredientes = contexto.Form.historial.Pop();
                 contexto.Form.RestaurarLista(contexto.Form.lista_ingredientes);
@@ -461,6 +468,7 @@ namespace Maquina_Expendedora
                 contexto.Form.Desactivar_vegetales();
                 contexto.Form.Activar_proteinas();
                 contexto.Form.Estado.Text = "Elige las proteínas...";
+                contexto.Form.Confirmar.Text = "Confirmar";
                 contexto.EstadoActual = new EstadoProteinas();
             }
             public void Cancelar(ContextoPizza contexto)
@@ -485,12 +493,34 @@ namespace Maquina_Expendedora
 
             public void Regreso(ContextoPizza contexto)
             {
-                
+                contexto.Form.Inventario["Albahaca"].Temporal = 0;
+                contexto.Form.Inventario["Cebolla"].Temporal = 0;
+                contexto.Form.Inventario["Oregano"].Temporal = 0;
+                contexto.Form.Inventario["Pimiento"].Temporal = 0;
+
+                //Regreso costo
+                contexto.Form.precio_total = contexto.Form.historialPrecio.Peek();
+                int restaurarPrecio = contexto.Form.precio_total;
+                contexto.Form.Label_precio.Text = restaurarPrecio.ToString();
+
+                //Regresar lista de ingredientes
+                contexto.Form.altura_label = 110;
+                contexto.Form.ingredientes_totales.Text = +contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
+                contexto.Form.ingredientes_seleccionados = contexto.Form.historial.Peek().Count();
+                contexto.Form.Limpiar_lista();
+                contexto.Form.lista_ingredientes = contexto.Form.historial.Peek();
+                contexto.Form.RestaurarLista(contexto.Form.lista_ingredientes);
+
+                contexto.Form.Desactivar_proteinas();
+                contexto.Form.Activar_vegetales();
+                contexto.Form.Estado.Text = "Elige los vegetales";
+                contexto.Form.Confirmar.Text = "Confirmar";
+                contexto.EstadoActual = new EstadoVegetales();
             }
 
             public void Cancelar(ContextoPizza contexto)
             {
-
+                contexto.Form.ReiniciarTodo();
             }
 
             public void SelecionarIngredientes(ContextoPizza contexto, string nombreIngrediente)
