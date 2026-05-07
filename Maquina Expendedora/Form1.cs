@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,10 +21,66 @@ namespace Maquina_Expendedora
         private ContextoPizza manejador;
         private List<Label> lista_ingredientes = new List<Label>();
         private Stack<List<Label>> historial = new Stack<List<Label>>();
+
+        public Stack<List<Label>> historial_ingredientes
+        {
+            get => historial;
+            set 
+            {
+                historial = value;
+            }
+        }
+
+        string urlImagen;
+
+        public void GenerarImagenGratis(string ingredientes)
+        {
+            // Limpiamos el texto para que sea apto para URL (sin espacios raros)
+            string prompt = Uri.EscapeDataString("A delicious pizza with " + ingredientes);
+
+            // La URL funciona como un buscador de imágenes en tiempo real
+            urlImagen = $"https://pollinations.ai/p/{prompt}?width=500&height=500&model=flux";
+
+        }
+
+        /*
+        public async Task GenerarImagenGemini(string promptUsuario)
+        {
+            string apiKey = "AIzaSyAYtguPMoJIhraqkCVEA48v66ztdHGvfdE";
+            // Nota: El endpoint cambia según el modelo que uses (Vertex AI o AI Studio)
+            string url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={apiKey}";
+
+            using (HttpClient client = new HttpClient())
+            {
+                var requestBody = new
+                {
+                    contents = new[]
+                    {
+                new { parts = new[] { new { text = $"Quiero que generes una imagen cuadrada de una pizza con los siguientes ingredientes: {promptUsuario}" } } }
+            }
+                };
+
+                string json = JsonConvert.SerializeObject(requestBody);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync(url, content);
+                string result = await response.Content.ReadAsStringAsync();
+
+                byte[] imageBytes = Convert.FromBase64String(result);
+                using (var ms = new MemoryStream(imageBytes))
+                {
+                    pizzaImagen = Image.FromStream(ms);
+                }
+
+            }
+            
+        }*/
+
+
         private Stack<int> historialPrecio = new Stack<int>();
         private Dictionary<string, Ingrediente> Inventario;
 
-
+        int dineroIngresado= 0;
         int precio_total = 0;
         int altura_label = 110;
         readonly int total_ingredientes = 12;
@@ -59,6 +118,9 @@ namespace Maquina_Expendedora
             InicializarInventario();
             Desactivar_proteinas();
             Desactivar_vegetales();
+            DesactivarDinero();
+            this.Recojer.Enabled = false;
+            this.Recojer.BackColor = Color.Gray;
             manejador = new ContextoPizza(this);
         }
 
@@ -280,6 +342,28 @@ namespace Maquina_Expendedora
 
         }
 
+        public async Task Generarpizza() 
+        {
+            List<string> IngredientesPizza = new List<string>();
+            string listaFinal;
+
+            foreach (var item in Inventario) 
+            {
+                if (item.Value.Temporal > 0) 
+                {
+
+                    IngredientesPizza.Add(item.Value.Nombre);
+                
+                }
+            }
+
+            listaFinal = string.Join(", ", IngredientesPizza);
+
+            GenerarImagenGratis(listaFinal);
+
+        }
+
+        //Elegir
         private void ElegirIngrediente_Click(object sender, EventArgs e)
         {
 
@@ -287,9 +371,18 @@ namespace Maquina_Expendedora
             manejador.Seleccionar(nombreIngrediente);
         }
 
+        private void Elegir_dinero (object sender, EventArgs e)
+        {
+            string valor_texto = (sender as Button).Tag.ToString();
+            manejador.Seleccionar(valor_texto);
+        }
+
+        //Procesar
         public void ProcesarSeleccion(string nombre)
         {
-            if (Inventario[nombre].Inventario > 0 && Inventario[nombre].Temporal < 10)
+            int inventario_temp = Inventario[nombre].Inventario;
+
+            if (Inventario[nombre].Inventario > 0 && Inventario[nombre].Temporal < inventario_temp)
             {
                 Inventario[nombre].Temporal++;
                 // Lógica de Label
@@ -305,6 +398,30 @@ namespace Maquina_Expendedora
             }
         }
 
+        public void ProcesarDinero(int valor)
+        {
+
+            int cambio = 0;
+            dineroIngresado += valor;
+            precio_total = precio_total - dineroIngresado;
+
+            if (precio_total < 0)
+            {
+                cambio = precio_total * -1;
+                precio_total = 0;
+                Estado.Text = "Su cambio es de: "+ cambio.ToString(); ;
+
+                Confirmar.Enabled = true;
+                Recojer.Enabled = true;
+                Confirmar.BackColor = Color.LimeGreen;
+                Recojer.BackColor = Color.White;
+
+            }
+            Label_precio.Text = precio_total.ToString();
+
+
+        }
+
         public void ReiniciarTodo()
         {
             Limpiar_lista();
@@ -313,8 +430,6 @@ namespace Maquina_Expendedora
             Activar_quesos();
             Desactivar_proteinas();
             Desactivar_vegetales();
-
-            InicializarInventario();
 
             altura_label = 110;
             precio_total = 0;
@@ -325,6 +440,14 @@ namespace Maquina_Expendedora
             ingredientes_totales.Text = "0/" + total_ingredientes;
             manejador = new ContextoPizza(this);
             Estado.Text = "Fase: Quesos";
+        }
+
+        public void ReiniciarTemporal()
+        {
+            foreach (var item in Inventario)
+            {
+                item.Value.Temporal = 0;
+            }
         }
 
         public void RestaurarLista(List<Label> restaurar)
@@ -342,6 +465,63 @@ namespace Maquina_Expendedora
 
             }
 
+        }
+
+        public void ActivarDinero() 
+        {
+        
+            this.Pesos2.Enabled = true;
+            this.Pesos2.BackColor = Color.White;
+            this.Pesos5.Enabled = true;
+            this.Pesos5.BackColor = Color.White;
+            this.Pesos10.Enabled = true;
+            this.Pesos10.BackColor = Color.White;
+            this.Pesos50.Enabled = true;
+            this.Pesos50.BackColor = Color.LightPink;
+            this.Pesos100.Enabled = true;
+            this.Pesos100.BackColor = Color.PaleVioletRed;
+            this.Pesos200.Enabled = true;
+            this.Pesos200.BackColor = Color.PaleGreen;
+
+        }
+
+        public void DesactivarDinero()
+        {
+            this.Pesos2.Enabled = false;
+            this.Pesos2.BackColor = desactivado;
+            this.Pesos5.Enabled = false;
+            this.Pesos5.BackColor = desactivado;
+            this.Pesos10.Enabled = false;
+            this.Pesos10.BackColor = desactivado;
+            this.Pesos50.Enabled = false;
+            this.Pesos50.BackColor = desactivado;
+            this.Pesos100.Enabled = false;
+            this.Pesos100.BackColor = desactivado;
+            this.Pesos200.Enabled = false;
+            this.Pesos200.BackColor = desactivado;
+        }
+
+        private async Task PizzaGenerada() 
+        { 
+            this.Confirmar.Enabled = false;
+            this.Recojer.Enabled = false;
+
+            try
+            {
+                // Llamamos al método con await
+                await Generarpizza();
+
+                MessageBox.Show("¡Tu pizza ha sido generada por la IA!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error con Gemini: " + ex.Message);
+            }
+            finally
+            {
+                this.Confirmar.Enabled = true;
+                this.Recojer.Enabled = true;
+            }
         }
 
         private void Confirmar_Click(object sender, EventArgs e)
@@ -367,6 +547,7 @@ namespace Maquina_Expendedora
                 contexto.Form.Desactivar_quesos();
                 contexto.Form.Activar_proteinas();
                 contexto.Form.historial.Push(new List<Label>(contexto.Form.lista_ingredientes));
+                
                 contexto.Form.historialPrecio.Push(contexto.Form.precio_total);
                 contexto.Form.Estado.Text = "Elige las proteínas...";
                 contexto.EstadoActual = new EstadoProteinas();
@@ -379,6 +560,7 @@ namespace Maquina_Expendedora
             public void Cancelar(ContextoPizza contexto)
             {
                 contexto.Form.ReiniciarTodo();
+                contexto.Form.ReiniciarTemporal();
             }
             public void SelecionarIngredientes(ContextoPizza contexto, string nombreIngrediente)
             {
@@ -415,7 +597,7 @@ namespace Maquina_Expendedora
                 contexto.Form.ingredientes_totales.Text = contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
                 contexto.Form.ingredientes_seleccionados = contexto.Form.historial.Peek().Count();
                 contexto.Form.Limpiar_lista();
-                contexto.Form.lista_ingredientes = contexto.Form.historial.Pop();
+                contexto.Form.lista_ingredientes = new List<Label>(contexto.Form.historial.Pop());
                 contexto.Form.RestaurarLista(contexto.Form.lista_ingredientes);
 
                 //Forma
@@ -428,6 +610,8 @@ namespace Maquina_Expendedora
             public void Cancelar(ContextoPizza contexto)
             {
                 contexto.Form.ReiniciarTodo();
+                contexto.Form.ReiniciarTemporal();
+
             }
             public void SelecionarIngredientes(ContextoPizza contexto, string nombreIngrediente)
             {
@@ -442,6 +626,15 @@ namespace Maquina_Expendedora
                 contexto.Form.Desactivar_vegetales();
                 contexto.Form.Estado.Text = "Esperando pago...";
                 contexto.Form.Confirmar.Text = "Pagar";
+                contexto.Form.historialPrecio.Push(contexto.Form.precio_total);
+                contexto.Form.historial.Push(new List<Label>(contexto.Form.lista_ingredientes));
+                contexto.Form.ActivarDinero();
+
+                contexto.Form.Confirmar.Enabled = false;
+                contexto.Form.Confirmar.BackColor =Color.Gray;
+                contexto.Form.Recojer.Enabled = false;
+                contexto.Form.Recojer.BackColor = Color.Gray;
+
                 contexto.EstadoActual = new EstadoPago();
 
             }
@@ -462,7 +655,7 @@ namespace Maquina_Expendedora
                 contexto.Form.ingredientes_totales.Text = +contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
                 contexto.Form.ingredientes_seleccionados = contexto.Form.historial.Peek().Count();
                 contexto.Form.Limpiar_lista();
-                contexto.Form.lista_ingredientes = contexto.Form.historial.Pop();
+                contexto.Form.lista_ingredientes = new List<Label>(contexto.Form.historial.Pop());
                 contexto.Form.RestaurarLista(contexto.Form.lista_ingredientes);
 
                 contexto.Form.Desactivar_vegetales();
@@ -474,6 +667,7 @@ namespace Maquina_Expendedora
             public void Cancelar(ContextoPizza contexto)
             {
                 contexto.Form.ReiniciarTodo();
+                contexto.Form.ReiniciarTemporal();
             }
             public void SelecionarIngredientes(ContextoPizza contexto, string nombreIngrediente)
             {
@@ -484,10 +678,25 @@ namespace Maquina_Expendedora
 
         public class EstadoPago : IEstadoPizza
         {
-            public void Confirmar(ContextoPizza contexto)
+            public async void Confirmar(ContextoPizza contexto)
             {
-                
+               contexto.Form.Estado.Text = "Recoja su producto";
+               contexto.Form.Confirmar.Text = "Recojer";
 
+                //await contexto.Form.PizzaGenerada();
+
+                PictureBox Fotopizza = new PictureBox();
+
+                Fotopizza.Name = "PizzaGemini";
+                Fotopizza.Size = new Size(160, 160);
+                Fotopizza.Location = new Point(244, 10);
+                Fotopizza.SizeMode= PictureBoxSizeMode.Zoom;
+                Fotopizza.BorderStyle = BorderStyle.FixedSingle;
+
+                Fotopizza.Image = Properties.Resources.pizzaF;
+
+                contexto.Form.PanelProducto.Controls.Add(Fotopizza);
+                contexto.EstadoActual = new EstadoDispensar();
 
             }
 
@@ -508,7 +717,7 @@ namespace Maquina_Expendedora
                 contexto.Form.ingredientes_totales.Text = +contexto.Form.historial.Peek().Count() + "/" + contexto.Form.total_ingredientes;
                 contexto.Form.ingredientes_seleccionados = contexto.Form.historial.Peek().Count();
                 contexto.Form.Limpiar_lista();
-                contexto.Form.lista_ingredientes = contexto.Form.historial.Peek();
+                contexto.Form.lista_ingredientes = contexto.Form.historial.Pop();
                 contexto.Form.RestaurarLista(contexto.Form.lista_ingredientes);
 
                 contexto.Form.Desactivar_proteinas();
@@ -521,11 +730,50 @@ namespace Maquina_Expendedora
             public void Cancelar(ContextoPizza contexto)
             {
                 contexto.Form.ReiniciarTodo();
+                contexto.Form.ReiniciarTemporal();
             }
 
             public void SelecionarIngredientes(ContextoPizza contexto, string nombreIngrediente)
             {
+                int valor = int.Parse(nombreIngrediente);
+                contexto.Form.ProcesarDinero(valor);
+            }
+        }
 
+        public class EstadoDispensar : IEstadoPizza
+        {
+            public void Confirmar(ContextoPizza contexto)
+            {
+                //Reiniciar todo después de dispensar
+                contexto.Form.Restar_ingredientes();
+
+                contexto.Form.Activar_quesos();
+                contexto.Form.DesactivarDinero();
+                contexto.Form.ReiniciarTodo();
+                contexto.Form.ReiniciarTemporal();
+
+                contexto.Form.PanelProducto.Controls.Clear();
+                contexto.Form.Recojer.Enabled = false;
+                contexto.Form.Recojer.BackColor = Color.Gray;
+
+                
+
+                contexto.EstadoActual = new EstadoQuesos();
+            }
+
+            public void Regreso(ContextoPizza contexto)
+            {
+                // No se permite regresar en el estado de dispensar
+            }
+
+            public void Cancelar(ContextoPizza contexto)
+            {
+                // No se permite cancelar en el estado de dispensar
+            }
+
+            public void SelecionarIngredientes(ContextoPizza contexto, string nombreIngrediente)
+            {
+                // No se permite seleccionar ingredientes en el estado de pago
             }
         }
     }

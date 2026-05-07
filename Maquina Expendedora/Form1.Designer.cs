@@ -35,12 +35,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.roundedPanel15 = new RoundedPanel();
+            this.PanelProducto = new RoundedPanel();
             this.PanelIngredientes = new RoundedPanel();
             this.ingredientes_totales = new System.Windows.Forms.Label();
             this.Estado = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.roundedPanel13 = new RoundedPanel();
+            this.PanelDinero = new RoundedPanel();
+            this.Recojer = new RoundedButton();
+            this.Pesos200 = new System.Windows.Forms.Button();
+            this.Pesos100 = new System.Windows.Forms.Button();
+            this.Pesos50 = new System.Windows.Forms.Button();
+            this.Pesos10 = new RoundedButton();
+            this.Pesos5 = new RoundedButton();
+            this.Pesos2 = new RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel9 = new RoundedPanel();
             this.Elegir_albahaca = new RoundedButton();
@@ -83,7 +90,7 @@
             this.Confirmar = new RoundedButton();
             this.panel15.SuspendLayout();
             this.PanelIngredientes.SuspendLayout();
-            this.roundedPanel13.SuspendLayout();
+            this.PanelDinero.SuspendLayout();
             this.roundedPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.roundedPanel10.SuspendLayout();
@@ -173,14 +180,14 @@
             this.label8.TabIndex = 51;
             this.label8.Text = "Verduras";
             // 
-            // roundedPanel15
+            // PanelProducto
             // 
-            this.roundedPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
-            this.roundedPanel15.CornerRadius = 20;
-            this.roundedPanel15.Location = new System.Drawing.Point(12, 601);
-            this.roundedPanel15.Name = "roundedPanel15";
-            this.roundedPanel15.Size = new System.Drawing.Size(551, 178);
-            this.roundedPanel15.TabIndex = 57;
+            this.PanelProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
+            this.PanelProducto.CornerRadius = 20;
+            this.PanelProducto.Location = new System.Drawing.Point(12, 601);
+            this.PanelProducto.Name = "PanelProducto";
+            this.PanelProducto.Size = new System.Drawing.Size(551, 178);
+            this.PanelProducto.TabIndex = 57;
             // 
             // PanelIngredientes
             // 
@@ -224,15 +231,116 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Ingredientes";
             // 
-            // roundedPanel13
+            // PanelDinero
             // 
-            this.roundedPanel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
-            this.roundedPanel13.Controls.Add(this.label1);
-            this.roundedPanel13.CornerRadius = 20;
-            this.roundedPanel13.Location = new System.Drawing.Point(569, 587);
-            this.roundedPanel13.Name = "roundedPanel13";
-            this.roundedPanel13.Size = new System.Drawing.Size(353, 192);
-            this.roundedPanel13.TabIndex = 56;
+            this.PanelDinero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(136)))));
+            this.PanelDinero.Controls.Add(this.Recojer);
+            this.PanelDinero.Controls.Add(this.Pesos200);
+            this.PanelDinero.Controls.Add(this.Pesos100);
+            this.PanelDinero.Controls.Add(this.Pesos50);
+            this.PanelDinero.Controls.Add(this.Pesos10);
+            this.PanelDinero.Controls.Add(this.Pesos5);
+            this.PanelDinero.Controls.Add(this.Pesos2);
+            this.PanelDinero.Controls.Add(this.label1);
+            this.PanelDinero.CornerRadius = 20;
+            this.PanelDinero.Location = new System.Drawing.Point(569, 587);
+            this.PanelDinero.Name = "PanelDinero";
+            this.PanelDinero.Size = new System.Drawing.Size(353, 192);
+            this.PanelDinero.TabIndex = 56;
+            // 
+            // Recojer
+            // 
+            this.Recojer.BackColor = System.Drawing.Color.White;
+            this.Recojer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Recojer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recojer.Location = new System.Drawing.Point(42, 121);
+            this.Recojer.Name = "Recojer";
+            this.Recojer.Size = new System.Drawing.Size(138, 48);
+            this.Recojer.TabIndex = 7;
+            this.Recojer.Text = "Recojer";
+            this.Recojer.UseVisualStyleBackColor = false;
+            this.Recojer.Click += new System.EventHandler(this.Confirmar_Click);
+            // 
+            // Pesos200
+            // 
+            this.Pesos200.BackColor = System.Drawing.Color.PaleGreen;
+            this.Pesos200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesos200.Location = new System.Drawing.Point(203, 132);
+            this.Pesos200.Name = "Pesos200";
+            this.Pesos200.Size = new System.Drawing.Size(106, 37);
+            this.Pesos200.TabIndex = 6;
+            this.Pesos200.Tag = "200";
+            this.Pesos200.Text = "200";
+            this.Pesos200.UseVisualStyleBackColor = false;
+            this.Pesos200.Click += new System.EventHandler(this.Elegir_dinero);
+            // 
+            // Pesos100
+            // 
+            this.Pesos100.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.Pesos100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesos100.Location = new System.Drawing.Point(203, 89);
+            this.Pesos100.Name = "Pesos100";
+            this.Pesos100.Size = new System.Drawing.Size(106, 37);
+            this.Pesos100.TabIndex = 5;
+            this.Pesos100.Tag = "100";
+            this.Pesos100.Text = "100";
+            this.Pesos100.UseVisualStyleBackColor = false;
+            this.Pesos100.Click += new System.EventHandler(this.Elegir_dinero);
+            // 
+            // Pesos50
+            // 
+            this.Pesos50.BackColor = System.Drawing.Color.LightPink;
+            this.Pesos50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesos50.Location = new System.Drawing.Point(203, 46);
+            this.Pesos50.Name = "Pesos50";
+            this.Pesos50.Size = new System.Drawing.Size(106, 37);
+            this.Pesos50.TabIndex = 4;
+            this.Pesos50.Tag = "50";
+            this.Pesos50.Text = "50";
+            this.Pesos50.UseVisualStyleBackColor = false;
+            this.Pesos50.Click += new System.EventHandler(this.Elegir_dinero);
+            // 
+            // Pesos10
+            // 
+            this.Pesos10.BackColor = System.Drawing.SystemColors.Control;
+            this.Pesos10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesos10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesos10.Location = new System.Drawing.Point(136, 57);
+            this.Pesos10.Name = "Pesos10";
+            this.Pesos10.Size = new System.Drawing.Size(44, 48);
+            this.Pesos10.TabIndex = 3;
+            this.Pesos10.Tag = "10";
+            this.Pesos10.Text = "10";
+            this.Pesos10.UseVisualStyleBackColor = false;
+            this.Pesos10.Click += new System.EventHandler(this.Elegir_dinero);
+            // 
+            // Pesos5
+            // 
+            this.Pesos5.BackColor = System.Drawing.Color.White;
+            this.Pesos5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesos5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesos5.Location = new System.Drawing.Point(83, 57);
+            this.Pesos5.Name = "Pesos5";
+            this.Pesos5.Size = new System.Drawing.Size(44, 48);
+            this.Pesos5.TabIndex = 2;
+            this.Pesos5.Tag = "5";
+            this.Pesos5.Text = "5";
+            this.Pesos5.UseVisualStyleBackColor = false;
+            this.Pesos5.Click += new System.EventHandler(this.Elegir_dinero);
+            // 
+            // Pesos2
+            // 
+            this.Pesos2.BackColor = System.Drawing.Color.White;
+            this.Pesos2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesos2.Location = new System.Drawing.Point(26, 57);
+            this.Pesos2.Name = "Pesos2";
+            this.Pesos2.Size = new System.Drawing.Size(44, 48);
+            this.Pesos2.TabIndex = 1;
+            this.Pesos2.Tag = "2";
+            this.Pesos2.Text = "2";
+            this.Pesos2.UseVisualStyleBackColor = false;
+            this.Pesos2.Click += new System.EventHandler(this.Elegir_dinero);
             // 
             // label1
             // 
@@ -670,6 +778,7 @@
             this.Cancelar.BackColor = System.Drawing.Color.Red;
             this.Cancelar.FlatAppearance.BorderSize = 0;
             this.Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancelar.Location = new System.Drawing.Point(242, 91);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(95, 60);
@@ -683,6 +792,7 @@
             this.Regresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(196)))), ((int)(((byte)(248)))));
             this.Regresar.FlatAppearance.BorderSize = 0;
             this.Regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Regresar.Location = new System.Drawing.Point(136, 55);
             this.Regresar.Name = "Regresar";
             this.Regresar.Size = new System.Drawing.Size(95, 60);
@@ -693,9 +803,10 @@
             // 
             // Confirmar
             // 
-            this.Confirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Confirmar.BackColor = System.Drawing.Color.LimeGreen;
             this.Confirmar.FlatAppearance.BorderSize = 0;
             this.Confirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Confirmar.Location = new System.Drawing.Point(242, 16);
             this.Confirmar.Name = "Confirmar";
             this.Confirmar.Size = new System.Drawing.Size(95, 60);
@@ -710,9 +821,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(934, 791);
-            this.Controls.Add(this.roundedPanel15);
+            this.Controls.Add(this.PanelProducto);
             this.Controls.Add(this.PanelIngredientes);
-            this.Controls.Add(this.roundedPanel13);
+            this.Controls.Add(this.PanelDinero);
             this.Controls.Add(this.roundedPanel9);
             this.Controls.Add(this.roundedPanel10);
             this.Controls.Add(this.roundedPanel11);
@@ -738,8 +849,8 @@
             this.panel15.PerformLayout();
             this.PanelIngredientes.ResumeLayout(false);
             this.PanelIngredientes.PerformLayout();
-            this.roundedPanel13.ResumeLayout(false);
-            this.roundedPanel13.PerformLayout();
+            this.PanelDinero.ResumeLayout(false);
+            this.PanelDinero.PerformLayout();
             this.roundedPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.roundedPanel10.ResumeLayout(false);
@@ -814,14 +925,21 @@
         private RoundedButton Elegir_pimiento;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label8;
-        private RoundedPanel roundedPanel13;
+        private RoundedPanel PanelDinero;
         private RoundedPanel PanelIngredientes;
         private RoundedButton Confirmar;
         private RoundedButton Cancelar;
         private RoundedButton Regresar;
-        private RoundedPanel roundedPanel15;
+        private RoundedPanel PanelProducto;
         private System.Windows.Forms.Label Label_precio;
         private System.Windows.Forms.Label ingredientes_totales;
+        private RoundedButton Pesos2;
+        private System.Windows.Forms.Button Pesos200;
+        private System.Windows.Forms.Button Pesos100;
+        private System.Windows.Forms.Button Pesos50;
+        private RoundedButton Pesos10;
+        private RoundedButton Pesos5;
+        private RoundedButton Recojer;
     }
 }
 
