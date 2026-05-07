@@ -46,7 +46,7 @@ namespace Maquina_Expendedora
         /*
         public async Task GenerarImagenGemini(string promptUsuario)
         {
-            string apiKey = "AIzaSyAYtguPMoJIhraqkCVEA48v66ztdHGvfdE";
+            string apiKey = "uwu";
             // Nota: El endpoint cambia según el modelo que uses (Vertex AI o AI Studio)
             string url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={apiKey}";
 
