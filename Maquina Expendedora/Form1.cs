@@ -724,6 +724,8 @@ namespace Maquina_Expendedora
                 contexto.Form.Activar_vegetales();
                 contexto.Form.Estado.Text = "Elige los vegetales";
                 contexto.Form.Confirmar.Text = "Confirmar";
+                contexto.Form.Confirmar.Enabled = true;
+                contexto.Form.Confirmar.BackColor= Color.LimeGreen;
                 contexto.EstadoActual = new EstadoVegetales();
             }
 
